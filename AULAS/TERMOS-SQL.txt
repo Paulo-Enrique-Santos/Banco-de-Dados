@@ -1,0 +1,21 @@
+CHAVE PRIMÁRIA - garante que o valor do campo seja único, e garante que o valor dela não
+seja nulo.(identificador único de uma tabela).
+
+CHAVE ESTRANGEIRA - serve para fazer o relacionamento entre as tabelas por meio de uma 
+chave primária (uma chave primaria em outra tabela).
+
+NULL - serve para informar que o valor é nulo ou não foi informado.
+
+DLL - é uma linguagem usada para definir estruturas de dados e modifica-los. (Data Definition Language)
+
+DML - é uma linguagem usada para recuoperação, inclusão, remoção e modificação, ou seja
+é uma linguagem manipuladora de dados. (Data Manipulation Language)
+
+DCL - é uma linguagem usada para controlar o acesso aos dados, dentro de um banco de 
+dados. (Data Control Language)
+
+------------------------------------------------------------------------------------------------------------------------
+
+CHAR - tem que colocar entre () o valor exato dos caracteres.
+
+VARCHAR - tem que colocar entre () o valor maximo dos caracteres.
