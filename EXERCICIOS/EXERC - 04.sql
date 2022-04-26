@@ -1,3 +1,7 @@
+-- ATRIBUTO É UMA COLUNA EXISTEM ATRIBUTOS COMPOSTO E MULTIVALORADO.
+-- ATRIBUTO COMPOSTO SERVEM PARA O MESMO OBJETIVO
+-- MULTIVALORADO SERVE PARA COISAS DESTINTAS
+
 -- CRIANDO O BANCO DE DADOS 
 create database sprint1;
 
@@ -28,14 +32,17 @@ select * from Professor;
 -- CRIANDO A TABELA DISCIPLINA
 create table Disciplina (
 idDisc		int primary key auto_increment,
-Nome 		varchar(45)
+Nome 		varchar(45),
+Semestre 	int constraint semestre check (Semestre in (1,2,3,4)),
+fkProfessor int,
+foreign key (fkProfessor) references Professor (idProfessor)
 );
 
 -- INSERINDO DADOS NA TABELA
 insert into Disciplina Values
-(null,'Biologia'),
-(null,'Quimica'),
-(null,'Matemática');
+(null,'Biologia',4,1),
+(null,'Quimica',4,2),
+(null,'Matemática',2,3);
 
 -- CONFERINDO
 select * from Disciplina;
